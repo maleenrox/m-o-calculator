@@ -1,9 +1,11 @@
+# Variables
 c = int(0)
 s = 0
 x = 0
 y = 0
 z = float(0)
 
+# Operator List
 print('''.......................................
 *** Welcome to M.O. Calculator ***
 ---------------------------------------
@@ -44,7 +46,10 @@ Comparison Operators
 > 26 = Less than or Equal to (<=)
 .......................................''')
 
-c = int(input("Operator You Need :- "))
+# Selector
+c = int(input("$ Operator You Need :- "))
+
+# Arithmetic Operators (0 - 7)
 if c == 1:
     print("Operator Addition (+)")
     print(".......................................")
@@ -52,6 +57,7 @@ if c == 1:
     y = int(input("Second Number :- "))
     z = x + y
     print(x, "+", y, "=", z)
+    input("Press enter to continue...")
 elif c == 2:
     print("Operator Subtraction (-)")
     print(".......................................")
@@ -59,6 +65,7 @@ elif c == 2:
     y = int(input("Second Number :- "))
     z = x - y
     print(x, "-", y, "=", z)
+    input("Press enter to continue...")
 elif c == 3:
     print("Operator Multiplication (*)")
     print(".......................................")
@@ -66,6 +73,7 @@ elif c == 3:
     y = int(input("Second Number :- "))
     z = x * y
     print(x, "*", y, "=", z)
+    input("Press enter to continue...")
 elif c == 4:
     print("Operator Division (/)")
     print(".......................................")
@@ -73,6 +81,7 @@ elif c == 4:
     y = int(input("Second Number :- "))
     z = x / y
     print(x, "/", y, "=", z)
+    input("Press enter to continue...")
 elif c == 5:
     print("Operator Modulus (%)")
     print(".......................................")
@@ -80,6 +89,7 @@ elif c == 5:
     y = int(input("Second Number :- "))
     z = x % y
     print(x, "%", y, "=", z)
+    input("Press enter to continue...")
 elif c == 6:
     print("Operator Exponent (**)")
     print(".......................................")
@@ -87,6 +97,7 @@ elif c == 6:
     y = int(input("Second Number :- "))
     z = x ** y
     print(x, "**", y, "=", z)
+    input("Press enter to continue...")
 elif c == 7:
     print("Operator Floor Division (//)")
     print(".......................................")
@@ -94,6 +105,9 @@ elif c == 7:
     y = int(input("Second Number :- "))
     z = x // y
     print(x, "//", y, "=", z)
+    input("Press enter to continue...")
+
+# Assignment Operators (8 - 14)
 elif c == 8:
     print("Operator Addition Assignment (+=)")
     print(".......................................")
@@ -103,6 +117,7 @@ elif c == 8:
     for z in range(s):
         x += y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 9:
     print("Operator Subtraction Assignment (-=)")
     print(".......................................")
@@ -112,6 +127,7 @@ elif c == 9:
     for z in range(s):
         x -= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 10:
     print("Operator Multiplication Assignment (*=)")
     print(".......................................")
@@ -121,6 +137,7 @@ elif c == 10:
     for z in range(s):
         x *= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 11:
     print("Operator Division Assignment (/=)")
     print(".......................................")
@@ -130,6 +147,7 @@ elif c == 11:
     for z in range(s):
         x /= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 12:
     print("Operator Remainder Assignment (%=)")
     print(".......................................")
@@ -139,6 +157,7 @@ elif c == 12:
     for z in range(s):
         x %= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 13:
     print("Operator Exponent Assignment (**=)")
     print(".......................................")
@@ -148,6 +167,7 @@ elif c == 13:
     for z in range(s):
         x **= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
 elif c == 14:
     print("Operator Floor Division Assignment (//=)")
     print(".......................................")
@@ -157,6 +177,9 @@ elif c == 14:
     for z in range(s):
         x //= y
         print("Loop no.", z, "---", "x =", x, "|", "y =", y)
+    input("Press enter to continue...")
+
+# Bitwise Operators (15 - 20)
 elif c == 15:
     print("Operator Binary AND (&)")
     print(".......................................")
@@ -164,6 +187,7 @@ elif c == 15:
     y = int(input("Second Number :- "))
     z = x & y
     print(x, "&", y, "=", z)
+    input("Press enter to continue...")
 elif c == 16:
     print("Operator Binary OR (|)")
     print(".......................................")
@@ -171,6 +195,7 @@ elif c == 16:
     y = int(input("Second Number :- "))
     z = x | y
     print(x, "|", y, "=", z)
+    input("Press enter to continue...")
 elif c == 17:
     print("Operator Binary XOR (^)")
     print(".......................................")
@@ -178,12 +203,14 @@ elif c == 17:
     y = int(input("Second Number :- "))
     z = x ^ y
     print(x, "^", y, "=", z)
+    input("Press enter to continue...")
 elif c == 18:
-    print("Operator Binary NOT / Binary Ones Complement (~)")
+    print("Operator Binary NOT / Binary Twos Complement (~)")
     print(".......................................")
     x = int(input("First Number :- "))
     z = ~x
     print("~", x, "=", z)
+    input("Press enter to continue...")
 elif c == 19:
     print("Operator Binary Left Shift (<<)")
     print(".......................................")
@@ -191,6 +218,7 @@ elif c == 19:
     y = int(input("Second Number :- "))
     z = x << y
     print(x, "<<", y, "=", z)
+    input("Press enter to continue...")
 elif c == 20:
     print("Operator Binary Right Shift (>>)")
     print(".......................................")
@@ -198,6 +226,9 @@ elif c == 20:
     y = int(input("Second Number :- "))
     z = x >> y
     print(x, ">>", y, "=", z)
+    input("Press enter to continue...")
+
+# Comparison Operators (21 - 26)
 elif c == 21:
     print("Operator Equal (==)")
     print(".......................................")
@@ -205,6 +236,7 @@ elif c == 21:
     y = int(input("Second Number :- "))
     z = x == y
     print(x, "==", y, "---", z)
+    input("Press enter to continue...")
 elif c == 22:
     print("Operator Not Equal (!=)")
     print(".......................................")
@@ -212,6 +244,7 @@ elif c == 22:
     y = int(input("Second Number :- "))
     z = x != y
     print(x, "!=", y, "---", z)
+    input("Press enter to continue...")
 elif c == 23:
     print("Operator Greater Than (>)")
     print(".......................................")
@@ -219,6 +252,7 @@ elif c == 23:
     y = int(input("Second Number :- "))
     z = x > y
     print(x, ">", y, "---", z)
+    input("Press enter to continue...")
 elif c == 24:
     print("Operator Less Than (<)")
     print(".......................................")
@@ -226,6 +260,7 @@ elif c == 24:
     y = int(input("Second Number :- "))
     z = x < y
     print(x, "<", y, "---", z)
+    input("Press enter to continue...")
 elif c == 25:
     print("Operator Greater than or Equal to (>=)")
     print(".......................................")
@@ -233,6 +268,7 @@ elif c == 25:
     y = int(input("Second Number :- "))
     z = x >= y
     print(x, ">=", y, "---", z)
+    input("Press enter to continue...")
 elif c == 26:
     print("Operator Less than or Equal to (<=)")
     print(".......................................")
@@ -240,6 +276,16 @@ elif c == 26:
     y = int(input("Second Number :- "))
     z = x <= y
     print(x, "<=", y, "---", z)
+    input("Press enter to continue...")
+
+# Invalid Input Part
 else:
     print('Invalid Operator Number')
+    input("Press enter to continue...")
     print(".......................................")
+
+'''
+This is My First Python Project...
+Author - @maleenrox
+Spacial Thanks & Credits - @sanjulap, S, ChatGPT, w3school, tutorialspoint.com, educative.oi
+'''
